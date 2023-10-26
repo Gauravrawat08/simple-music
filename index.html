@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="music">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <!-- / <i class="fa-solid fa-angle-right"></i> -->
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- / <i class="fa-solid fa-angle-right"></i> -->
+                </div>
+            </nav>
+            <img src="468-thumbnail.png" alt="laod" class="song-img">
+            <h1>Can You hear me</h1>
+            <p>Dopamine</p>
+            <audio   id="song">
+                <source src="Dopamine - Giulio Cercato  _ can you hear me _ Dopamine (Lyrics)(MP3_160K).mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="volume">
+
+
+            <div class="cantrols">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="pause"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+
+                
+                <!-- <i class="fa-solid fa-pause"></i> -->
+            </div>
+        </div>
+
+    </div>
+    <script src="scipt.js"></script>
+
+</body>
+
+</html>
